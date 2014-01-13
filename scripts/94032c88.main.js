@@ -1,0 +1,1 @@
+jQuery(document).ready(function(a){a(".email").focusin(function(){a(".submit").delay(500).addClass("focus").slideDown(250)}),a("#mc-signup").ajaxChimp({url:"http://getbsides.us3.list-manage1.com/subscribe/post?u=dddd8c2c3cb858b05fb634b1f&amp;id=e92dfb66e6",callback:function(b){"success"===b.result?a(".alert-success").slideDown():a(".alert-failure").slideDown()}})});
