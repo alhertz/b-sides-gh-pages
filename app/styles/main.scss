@@ -1,0 +1,168 @@
+/*
+/ Dear sir, I do not care what you think of this code. It works. Fuck off. 
+/
+/ Love,
+/ Alex Hertz
+*/
+
+$screen-xs-min: 320px;
+$screen-sm-min: 768px;
+$screen-md-min: 960px;
+$screen-lg-min: 960px;
+
+body {
+  height: 100%;
+  background: url(../images/bg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 200;
+  color: #FFF;
+  font-size: 16px;
+  line-height: 1.5;
+  padding: 2.0em;
+}
+.alert {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  color: #FFF;
+  &.alert-success {
+    background: #02846E;
+  }
+  &.alert-failure {
+    background: #CC0535;
+  }
+}
+:hover {
+  -webkit-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+.hero-unit {
+  margin: 0 auto;
+  max-width: 640px;  
+  text-align: center;
+  img {
+    width: 200px;
+    height: auto;
+  }
+  p {
+    color: #999;
+    font-size: 1.2em;
+  }
+  .lead {
+    margin: 0;
+    float: left;
+    width: 46%;
+    padding: 2%;
+    // text-align: left;
+  }
+  .clear {
+    clear: both;
+  }
+  strong {
+    color: #656565;
+    font-size: .75em;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+  #signup {
+    h2 {
+      margin-top: 2.0em;
+      font-size: 1.0em;
+      font-weight: 300;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      color: #EEE;
+    }
+  }
+  input {
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #656565;
+    width: 100%;
+    line-height: 1.5;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 1.5em;
+    font-weight: 300;
+    color: #FFF;
+    max-width: 320px;
+    padding: .5em 0;
+    text-align: center;
+    &:focus {
+      outline: none;
+      border-bottom-color: #FFF;
+    }
+  }
+  button {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    display: none;
+    background: #FFF;
+    font-size: 1.0em;
+    border-top: 0px;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    line-height: 1.5;
+    padding: .5em 0;
+    width: 100%;
+    max-width: 320px;
+    text-align: center;
+    border: none;
+    font-weight: 400;
+    margin: -2px 0 0 0;
+    &:hover {
+      background: #CCC;
+      cursor: pointer;
+    }
+  }
+  #loading {
+    display: none;
+  }
+}
+@media (max-width: $screen-md-min) {
+  body {
+    font-size: 14px;
+    .logo {
+      width: 200px;
+      height: auto;
+    }
+  }
+}
+@media (max-width: $screen-sm-min) {
+  body {
+    font-size: 12px;
+    .lead {
+      font-size: 1.5em;
+    }
+    .hero-unit .lead {
+      float: none;
+      width: 100%;
+    }
+    .logo {
+      width: 150px;
+      height: auto;
+    }
+  }
+}
+@media (max-width: $screen-xs-min) {
+  body {
+    .logo {
+      width: 100px;
+      height: auto;
+    }
+    h2 {
+      font-size: 10px !important;
+      letter-spacing: 2px;
+    }
+  }
+}
